@@ -1,14 +1,16 @@
 package workflow.exception;
 
-public abstract class WorkflowException extends RuntimeException {
-    private final String code;
+import workflow.enums.ErrorCode;
 
-    protected WorkflowException(String code, String message){
+public abstract class WorkflowException extends RuntimeException {
+    private final ErrorCode code;
+
+    protected WorkflowException(ErrorCode code, String message){
         super(message);
         this.code = code;
     }
 
-    public String getCode(){
+    public ErrorCode getCode(){
         return code;
     }
 }

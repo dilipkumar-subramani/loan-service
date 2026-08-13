@@ -1,0 +1,10 @@
+package workflow.enums;
+
+public enum ErrorCode {
+
+    CREDIT_BUREAU_TIMEOUT,
+    CREDIT_SCORE_LOW,
+    INVALID_CUSTOMER,
+    CUSTOMER_VALIDATION_FAILED,
+    UNEXPECTED_ERROR
+}

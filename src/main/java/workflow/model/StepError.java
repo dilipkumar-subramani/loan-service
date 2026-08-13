@@ -1,8 +1,9 @@
 package workflow.model;
 
+import workflow.enums.ErrorCode;
 import workflow.enums.ErrorType;
 
 public record StepError(ErrorType type,
-                        String code,
+                        ErrorCode code,
                         String message) {
 }
